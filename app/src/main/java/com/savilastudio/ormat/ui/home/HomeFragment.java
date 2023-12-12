@@ -21,10 +21,6 @@ import com.savilastudio.ormat.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
-    static int numCardView = 9;
-
-
-
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
@@ -46,7 +42,7 @@ public class HomeFragment extends Fragment {
     }
 }
 
-public class Home extends Activity {
+class HomeButton extends Activity {
     static int numCards = 1;
 
     @Override
@@ -60,13 +56,13 @@ public class Home extends Activity {
 
         //Creamos los botones en bucle
         for (int i=0; i<numCards; i++){
-            CardView cardView = new CardView(this)
+            CardView cardView = new CardView(this);
             //Asignamos propiedades de layout al boton
             cardView.setLayoutParams(lp);
             //Asignamos Texto al botón
             //cardView.("Boton "+String.format("%02d", i ));
             //Asignamose el Listener
-            cardView.setOnClickListener(new ButtonsOnClickListener(this));
+            cardView.setOnClickListener(new ButtonsOnClickListener());
             //Añadimos el botón a la botonera
             agregarTarjeta.addView(cardView);
         }
@@ -79,6 +75,5 @@ public class Home extends Activity {
         {
             Toast.makeText(getApplicationContext(),"Pulsado", Toast.LENGTH_SHORT).show();
         }
-
     };
 }

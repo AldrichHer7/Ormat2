@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/informacion_materia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/naranja"
+    android:backgroundTint="@color/naranja"
+    tools:context=".ui.home.InformacionMateria">
+
+    <TextView
+        android:id="@+id/nombreMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="672dp"
+        android:text="Materia"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nomDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="588dp"
+        android:text="Docente:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/horariow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario:"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <Button
+        android:id="@+id/agregarTarea"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="636dp"
+        android:onClick="addTarea"
+        android:text="Agregar Tarea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nombreMateria"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="129dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="192dp"
+        android:layout_height="17dp"
+        android:hint="hint"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="188dp"
+        android:layout_height="27dp"
+        android:hint="hint"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
