@@ -22,8 +22,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
 
     <Button
         android:id="@+id/crearmateria"
@@ -49,8 +51,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/crearmateria"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/crearmateria"
+        app:layout_constraintVertical_bias="0.456"></LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
